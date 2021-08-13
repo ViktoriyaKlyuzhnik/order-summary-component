@@ -6,27 +6,26 @@ $DesaturatedBlue: hsl(224, 23%, 55%);
 $DarkBlue: hsl(223, 47%, 23%);
 
 body {
+    background-color: $PaleBlue;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
-    background: $PaleBlue url(/images/pattern-background-desktop.svg) no-repeat;
-    background-size: 100%;
     min-height: 100vh;
     padding-top: 100px;
 }
 main {
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto auto;
     text-align: center;
     .card {
-        width: 450px;
-        height: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        min-width: 320px;
+        max-width: 450px;
+        margin: 0px auto;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 30px 40px rgba($BrightBlue,0.15);
-        img {
+        .main-img {
+            position: relative;
+            width: 100%;
             border-radius:  20px 20px 0 0;
         }
         h1 {
@@ -44,7 +43,7 @@ main {
         }
         .card2 {
             background-color: $VeryPaleBlue;
-            width: 356px;
+            width: 80%;
             height: 100px;
             margin-left: auto;
             margin-right: auto;
@@ -87,7 +86,7 @@ main {
             
         }
         .buttons {
-            width: 356px;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             margin-top: 32px;
@@ -123,5 +122,13 @@ main {
         }  
     }
 }
-
-
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+    body {
+        background: $PaleBlue url(/images/pattern-background-desktop.svg) no-repeat;
+        background-size: 100%;
+    }
+    .card {
+        max-width: 450px;
+        height: 700px;
+    }
+}

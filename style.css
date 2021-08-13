@@ -56,15 +56,17 @@ main {
         main .card .card2 .text span {
           color: #7280a7;
           font-weight: 500; }
-      main .card .card2 a {
+      main .card .card2 .btn-text {
         position: absolute;
         right: 26px;
         top: 40px;
         font-size: 14px;
         font-weight: 700;
         color: #3829e0;
-        text-decoration: underline; }
-      main .card .card2 a:hover {
+        text-decoration: underline;
+        background-color: rgba(255, 255, 255, 0);
+        border-width: 0px; }
+      main .card .card2 .btn-text:hover {
         opacity: 0.7;
         cursor: pointer; }
     main .card .buttons {
@@ -76,12 +78,12 @@ main {
         width: 100%;
         height: 50px;
         background-color: #3829e0;
-        border-width: 0px;
         border-radius: 12px;
         color: white;
         font-weight: 700;
         font-size: 16px;
-        box-shadow: 0px 20px 20px rgba(56, 41, 224, 0.2); }
+        box-shadow: 0px 20px 20px rgba(56, 41, 224, 0.2);
+        border-width: 0px; }
       main .card .buttons .btn-primary:hover {
         opacity: 0.7;
         cursor: pointer; }
@@ -90,10 +92,10 @@ main {
         height: 50px;
         margin-top: 18px;
         background-color: rgba(255, 255, 255, 0);
-        border-width: 0px;
         color: #7280a7;
         font-weight: 700;
-        font-size: 16px; }
+        font-size: 16px;
+        border-width: 0px; }
       main .card .buttons .btn-default:hover {
         color: #1f2f56;
         cursor: pointer; }
